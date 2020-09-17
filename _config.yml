@@ -1,6 +1,8 @@
-theme: jekyll-theme-minimal
+title: 도브로 블로그
+description: 알쓸IT잡
 markdown: kramdown
 highlighter: rouge
 lsi: false
 excerpt_separator: "\n\n\n\n"
 incremental: false
+theme: jekyll-theme-minimal
