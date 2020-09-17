@@ -2,5 +2,5 @@ theme: jekyll-theme-minimal
 markdown: kramdown
 highlighter: rouge
 lsi: false
-excerpt_separator: "\n\n"
+excerpt_separator: "\n\n\n\n"
 incremental: false
