@@ -9,7 +9,7 @@ title: DRF(Django Rest Framework)에서 IP로 Permission 지정하고 싶을 때
 
 따라서 DRF에서는 아래와 같이 간단한 방식으로 접근 제한을 줄 수 있습니다.
 
-`permissions.py`라는 이름으로 파일을 하나 만들어주고,
+`permissions.py`라는 이름으로 파일을 하나 만들어 아래와 같이 작성해주고,
 
 ```py
 from rest_framework import permissions
@@ -34,6 +34,16 @@ class IPBasedPermission(permissions.BasePermission):
             ip_address = request.META.get('REMOTE_ADDR')
 
         return ip_address in ALLOWED_IP_ADDRESSES
+```
+
+`views.py` 혹은 `api.py`에서 아래와 같이 permission_classes로 지정해주면 됩니다.
+
+```py
+class BlasAPIView(generics.GenericAPIView):
+    permission_classes = [IPBasedPermission]
+    
+    ...
+
 ```
 
 이렇게 간단하게 만들 수 있고 필요 시 `ALLOWED_IP_ADDRESSES`를 model로 만들어 관리하는 방법도 있겠습니다. 물론 반대로 `BLACK_LIST_IP_ADDRESSES`같은 반대케이스도 가능하겠습니다(공식가이드에서는 비슷한 가이드가 실제로 있습니다).
