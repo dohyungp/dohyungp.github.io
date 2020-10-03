@@ -1,4 +1,3 @@
-
 ---
 layout: default
 title: DRF(Django Rest Framework)에서 IP로 Permission 지정하고 싶을 때
