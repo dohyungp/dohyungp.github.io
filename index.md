@@ -12,6 +12,7 @@ layout: default
 - [매일 알림주는 슬랙봇 (진짜) 간단하게 만들고 싶을 때](./development/gas_slack_bot.html)
 - [fsevents 지옥에 빠져버렸다](./development/hell_in_fsevents.html)
 - [BigQuery SESSION TABLE 사용하기](./development/bigquery_use_session_table.html)
+- [BigQuery Time Travel](./development/bigquery_time_traveling.html)
 
 ## TIL
 - [밑바닥부터 시작하는 딥러닝 3 STEP 10까지 읽으면서](./TIL/dl_scratch_01.md)
