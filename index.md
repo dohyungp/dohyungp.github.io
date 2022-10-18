@@ -14,6 +14,7 @@ layout: default
 - [BigQuery SESSION TABLE 사용하기](./development/bigquery_use_session_table.html)
 - [BigQuery Time Travel](./development/bigquery_time_traveling.html)
 - [Airflow Scheduler Deeper look](./development/airflow-scheduler-deeper-look.html)
+- [Airflow Task vs Dynamic DAG](./development/airflow-task-vs-dynamic-dag.html)
 
 ## TIL
 - [밑바닥부터 시작하는 딥러닝 3 STEP 10까지 읽으면서](./TIL/dl_scratch_01.md)
